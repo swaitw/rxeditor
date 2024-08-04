@@ -1,0 +1,47 @@
+{
+  "name": "@rxdrag/react-fieldy",
+  "version": "0.6.8",
+  "type": "module",
+  "module": "index.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "module": "dist/index.mjs",
+    "typings": "dist/index.d.ts",
+    "access": "public"
+  },
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint . --ext .ts,.tsx",
+    "build": "vite build",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "devDependencies": {
+    "@rxdrag/eslint-config-custom": "workspace:*",
+    "@rxdrag/tsconfig": "workspace:*",
+    "@types/react": "^18.2.22",
+    "@types/react-dom": "^18.2.7",
+    "eslint": "^7.32.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.1",
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.3",
+    "@rxdrag/fieldy": "workspace:*",
+    "@rxdrag/fieldy-yup-validation": "workspace:*",
+    "@rxdrag/react-shared": "workspace:*",
+    "@rxdrag/shared": "workspace:*",
+    "@types/react": "^18.2.22",
+    "@types/react-dom": "^18.2.7",
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "redux": "^4.2.1",
+    "styled-components": "^5.3.9"
+  }
+}

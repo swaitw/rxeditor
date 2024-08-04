@@ -1,0 +1,29 @@
+{
+  "name": "@rxdrag/shared",
+  "version": "0.6.0",
+  "author": "Water.Li",
+  "module": "index.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "module": "dist/index.mjs",
+    "typings": "dist/index.d.ts",
+    "access": "public"
+  },
+  "scripts": {
+    "lint": "eslint . --ext .ts,tsx",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "@rxdrag/eslint-config-custom": "workspace:*",
+    "@rxdrag/tsconfig": "workspace:*",
+    "@types/lodash": "^4.14.191",
+    "@types/node": "*"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "nanoid": "4.0.2"
+  }
+}

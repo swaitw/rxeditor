@@ -1,0 +1,24 @@
+{
+  "name": "@rxdrag/minions-schema",
+  "version": "0.6.0",
+  "author": "Water.Li",
+  "module": "index.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "module": "dist/index.mjs",
+    "typings": "dist/index.d.ts",
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "build": "vite build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "*",
+    "@rxdrag/eslint-config-custom": "workspace:*",
+    "@rxdrag/tsconfig": "workspace:*"
+  }
+}

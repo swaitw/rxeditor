@@ -1,0 +1,335 @@
+{
+  "componentName": "Root",
+  "slots": {},
+  "children": [
+    {
+      "componentName": "TwoColumnLayout",
+      "props": {},
+      "slots": {
+        "header": {
+          "componentName": "Layout.Header",
+          "props": {
+            "style": {
+              "display": "flex",
+              "justifyContent": "space-between",
+              "alignItems": "center"
+            }
+          },
+          "slots": {},
+          "children": [
+            {
+              "componentName": "Avatar",
+              "props": {},
+              "slots": {
+                "icon": {
+                  "componentName": "IconView",
+                  "props": {
+                    "icon": {
+                      "iconKey": "UserOutlined"
+                    },
+                    "style": {}
+                  },
+                  "slots": {},
+                  "children": []
+                }
+              },
+              "children": []
+            }
+          ]
+        },
+        "sider": {
+          "componentName": "Layout.Sider",
+          "props": {},
+          "slots": {},
+          "children": [
+            {
+              "componentName": "Logo",
+              "slots": {},
+              "children": []
+            },
+            {
+              "componentName": "Menu",
+              "slots": {},
+              "children": []
+            }
+          ]
+        },
+        "content": {
+          "componentName": "Layout.Content",
+          "props": {},
+          "slots": {},
+          "children": [
+            {
+              "componentName": "Paper",
+              "slots": {},
+              "children": [
+                {
+                  "componentName": "Row",
+                  "props": {},
+                  "slots": {},
+                  "children": [
+                    {
+                      "componentName": "Col",
+                      "props": {
+                        "span": 24,
+                        "style": {}
+                      },
+                      "slots": {},
+                      "children": [
+                        {
+                          "componentName": "Breadcrumb",
+                          "slots": {},
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "componentName": "Col",
+                      "props": {
+                        "span": 24,
+                        "style": {
+                          "marginTop": "16px"
+                        }
+                      },
+                      "slots": {},
+                      "children": [
+                        {
+                          "componentName": "Text",
+                          "props": {
+                            "value": "基础表单",
+                            "style": {},
+                            "mode": "h2"
+                          },
+                          "slots": {},
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "componentName": "Col",
+                      "props": {
+                        "span": 24,
+                        "style": {
+                          "marginTop": "16px"
+                        }
+                      },
+                      "slots": {},
+                      "children": [
+                        {
+                          "componentName": "Text",
+                          "props": {
+                            "value": "表单页用于向用户收集或验证信息，基础表单常见于数据项较少的表单场景。",
+                            "style": {}
+                          },
+                          "slots": {},
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "componentName": "Card",
+              "props": {
+                "style": {
+                  "marginTop": "16px",
+                  "marginRight": "16px",
+                  "marginBottom": "16px",
+                  "marginLeft": "16px"
+                }
+              },
+              "slots": {},
+              "children": [
+                {
+                  "componentName": "Form",
+                  "props": {
+                    "layout": "horizontal",
+                    "disabled": false,
+                    "style": {}
+                  },
+                  "slots": {},
+                  "children": [
+                    {
+                      "componentName": "Button",
+                      "props": {
+                        "type": "primary",
+                        "title": "Button"
+                      },
+                      "x-controller": {
+                        "id": "0eaa8c9d-3b7e-4ca2-b96e-4d2168752133",
+                        "controllerType": "logicFlow",
+                        "events": [
+                          {
+                            "id": "8fb48133-0205-4492-b651-dd97037ab4f1",
+                            "name": "init",
+                            "label": "初始化"
+                          },
+                          {
+                            "id": "7515651c-1729-4265-8e35-8b6fe40275cf",
+                            "name": "destroy",
+                            "label": "销毁"
+                          },
+                          {
+                            "id": "d3d5da30-7833-42d0-906d-0f97b9c323cd",
+                            "name": "onClick",
+                            "label": "点击",
+                            "nodes": [
+                              {
+                                "id": "f26a1adb-b091-4cb1-84fb-89a1d59e2aa3",
+                                "label": "输入",
+                                "type": "Start",
+                                "activityName": "start",
+                                "name": "input",
+                                "x6Node": {
+                                  "x": 190,
+                                  "y": 100,
+                                  "width": 20,
+                                  "height": 20
+                                }
+                              },
+                              {
+                                "id": "6f432167-7e9a-41eb-b8a0-6f9eed2a186a",
+                                "label": "输入",
+                                "type": "SingleReaction",
+                                "activityName": "readFieldValue",
+                                "inPorts": [
+                                  {
+                                    "id": "508eb93d-9683-4a1f-8a92-1eda1a1bba85",
+                                    "name": "input",
+                                    "label": ""
+                                  }
+                                ],
+                                "outPorts": [
+                                  {
+                                    "id": "f86a5c4c-71f2-4829-ac32-2541e5fb39fd",
+                                    "name": "output",
+                                    "label": ""
+                                  }
+                                ],
+                                "x6Node": {
+                                  "x": 370,
+                                  "y": 130,
+                                  "width": 116,
+                                  "height": 32
+                                },
+                                "config": {
+                                  "fieldPath": "username"
+                                }
+                              },
+                              {
+                                "id": "4346f004-4aa8-46fa-b793-fdbcffe9342f",
+                                "label": "调试",
+                                "type": "SingleReaction",
+                                "activityName": "debug",
+                                "inPorts": [
+                                  {
+                                    "id": "5c6f67ae-b707-46ec-ba47-b0f92f88b2f9",
+                                    "name": "input",
+                                    "label": ""
+                                  }
+                                ],
+                                "x6Node": {
+                                  "x": 560,
+                                  "y": 230,
+                                  "width": 88,
+                                  "height": 32
+                                }
+                              }
+                            ],
+                            "lines": [
+                              {
+                                "id": "8fe08518-e9ee-4414-801d-9351ac473f05",
+                                "source": {
+                                  "nodeId": "f26a1adb-b091-4cb1-84fb-89a1d59e2aa3"
+                                },
+                                "target": {
+                                  "nodeId": "6f432167-7e9a-41eb-b8a0-6f9eed2a186a",
+                                  "portId": "508eb93d-9683-4a1f-8a92-1eda1a1bba85"
+                                }
+                              },
+                              {
+                                "id": "2a620146-0229-42a1-80ad-62eb8e689da8",
+                                "source": {
+                                  "nodeId": "6f432167-7e9a-41eb-b8a0-6f9eed2a186a",
+                                  "portId": "f86a5c4c-71f2-4829-ac32-2541e5fb39fd"
+                                },
+                                "target": {
+                                  "nodeId": "4346f004-4aa8-46fa-b793-fdbcffe9342f",
+                                  "portId": "5c6f67ae-b707-46ec-ba47-b0f92f88b2f9"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "slots": {},
+                      "children": []
+                    },
+                    {
+                      "componentName": "FormItem",
+                      "props": {
+                        "label": "FormItem"
+                      },
+                      "slots": {},
+                      "children": [
+                        {
+                          "componentName": "Input",
+                          "props": {
+                            "placeholder": "输入框"
+                          },
+                          "x-data": {
+                            "type": "normal",
+                            "name": "username"
+                          },
+                          "slots": {},
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "componentName": "Field",
+                      "props": {
+                        "label": "InputField"
+                      },
+                      "locked": true,
+                      "slots": {
+                        "input": {
+                          "componentName": "Input",
+                          "props": {
+                            "placeholder": "输入框"
+                          },
+                          "slots": {},
+                          "children": []
+                        }
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "footer": {
+          "componentName": "Layout.Footer",
+          "props": {},
+          "slots": {},
+          "children": [
+            {
+              "componentName": "Text",
+              "props": {
+                "value": "Apper Copyright ©2023",
+                "style": {}
+              },
+              "slots": {},
+              "children": []
+            }
+          ]
+        }
+      },
+      "children": []
+    }
+  ]
+}

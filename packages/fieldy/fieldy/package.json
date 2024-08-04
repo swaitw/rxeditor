@@ -1,0 +1,35 @@
+{
+  "name": "@rxdrag/fieldy",
+  "version": "0.6.4",
+  "author": "Water.Li",
+  "type": "module",
+  "module": "index.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "module": "dist/index.mjs",
+    "typings": "dist/index.d.ts",
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.3",
+    "@rxdrag/schema": "workspace:*",
+    "@rxdrag/shared": "workspace:*",
+    "lodash": "^4.17.21",
+    "redux": "^4.2.1",
+    "yup": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "@rxdrag/eslint-config-custom": "workspace:*",
+    "@rxdrag/tsconfig": "workspace:*"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
